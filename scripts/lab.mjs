@@ -56,6 +56,9 @@ let multiply = sub * n3;
 let reminder =  multiply % 4;
 console.log(reminder + " is the reminder after we did all these calculations\n");
 
+let underOrEqual25 = n1 <= 25 && n2 <= 25 && n3 <= 25 && n4 <= 25;
+console.log(underOrEqual25 + " that all numbers are 25 or less");
+
 // **** PART 2 ****
 // Initalizing variables
 let tripDistance = 1500;
@@ -67,24 +70,30 @@ let gallonCost = 3;
 
 // calculating the number of gallons for each trip
 let numOfGals1 = tripDistance / fiftyfiveMilesPerHour;
-console.log(numOfGals1);
+console.log(numOfGals1 + " gallons needed at 55 mph");
 let numOfGals2 = tripDistance / sixtyMilesPerHour;
-console.log(numOfGals2);
+console.log(numOfGals2 + " gallons needed at 60 mph");
 let numOfGals3 = tripDistance / seventyFiveMilesPerHour;
-console.log(numOfGals3 + "\n");
+console.log(numOfGals3 + " gallons needed at 75 mph\n");
 
 // calculating tbe gallons cost of each trip
 let tripGalsCost1 = numOfGals1 * gallonCost;
-console.log(tripGalsCost1);
+console.log(tripGalsCost1 + " dollars needed for gas at 55 mph");
 let tripGalsCost2 = numOfGals2 * gallonCost;
-console.log(tripGalsCost2);
+console.log(tripGalsCost2 + " dollars needed for gas at 60 mph");
 let tripGalsCost3 = numOfGals3 * gallonCost;
-console.log(tripGalsCost3 + "\n");
+console.log(tripGalsCost3 + " dollars needed for gas at 75 mph\n");
 
 // checking if the gallons cost of each trip is in budget
 let checkInBudget1 = budget > tripGalsCost1;
-console.log(checkInBudget1);
+console.log(checkInBudget1 + " budget is enough at 55 mph");
 let checkInBudget2 = budget > tripGalsCost2;
-console.log(checkInBudget2);
+console.log(checkInBudget2 + " budget is enough at 60 mph");
 let checkInBudget3 = budget > tripGalsCost3;
-console.log(checkInBudget3 + "\n");
+console.log(checkInBudget3 + " budget is enough at 75 mph\n");
+
+// recommendation summary
+console.log("Summary:");
+console.log("55 mph: Most fuel efficient but slowest.");
+console.log("60 mph: Balanced between time and cost.");
+console.log("75 mph: Fastest but most expensive.");
